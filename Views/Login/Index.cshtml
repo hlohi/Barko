@@ -1,0 +1,24 @@
+﻿
+@model Barko.Models.Login
+
+
+@using (Html.BeginForm())
+{
+
+    <br />
+
+    <div>
+        @Html.TextBoxFor(u => u.Password, new { @class = "form-control", placeholder = "Password " })
+        
+    </div>
+    <br />
+
+    <div>
+        @Html.TextBoxFor(u => u.EmailAdrress, new { @class = "form-control", placeholder = "Email Address" })
+    </div>
+    <br />
+
+   
+
+    <button class="btn btn-success" type="submit"> Login </button>
+}
